@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d8f99ec32ff7211089e4cc96f699b67e" label="OS Image" max_length="40" name="x_1068020_aodd_os_image" type="collection">
+        <element attributes="encode_utf8=false" label="AD Groups" max_length="32" name="ad_groups" reference="sys_user_group" type="reference"/>
+        <element attributes="encode_utf8=false" label="AD Users" max_length="32" name="ad_users" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Business Justification" max_length="4000" name="business_justification" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date of Issue" max_length="40" name="date_of_issue" type="glide_date_time"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="us-east" label="Region" max_length="40" name="region" type="string">
+            <choice>
+                <element inactive_on_update="false" label="US-East" sequence="0" value="us-east"/>
+                <element inactive_on_update="false" label="US-Central" sequence="1" value="us-central"/>
+                <element inactive_on_update="false" label="US-West" sequence="2" value="us-west"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" dependent="region" dependent_on_field="region" label="Sub-Region" max_length="40" name="sub_region" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="us-east" inactive_on_update="false" label="East city 1" sequence="0" value="east_city_1"/>
+                <element dependent_value="us-east" inactive_on_update="false" label="East city 2" sequence="1" value="east_city_2"/>
+                <element dependent_value="us-west" inactive_on_update="false" label="West city 1" sequence="2" value="west_city_1"/>
+                <element dependent_value="us-west" inactive_on_update="false" label="West city 2" sequence="3" value="west_city_2"/>
+                <element dependent_value="us-central" inactive_on_update="false" label="Central city 1" sequence="4" value="central_city_1"/>
+                <element dependent_value="us-central" inactive_on_update="false" label="Central city 2" sequence="5" value="central_city_2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="US-EAST Pin" max_length="40" name="us_east_pin" type="string"/>
+        <index name="index">
+            <element name="ad_groups"/>
+        </index>
+        <index name="index2">
+            <element name="ad_users"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices>2,4,6,8</choices>
+        <description>No of notice days</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1068020_aodd.Notice days</name>
+        <read_roles/>
+        <suffix>Notice days</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-18 20:12:22</sys_created_on>
+        <sys_id>2f30fbaa2f48311089e4cc96f699b616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1068020_aodd.Notice days</sys_name>
+        <sys_package display_value="AODD" source="x_1068020_aodd">2fd916032f77211089e4cc96f699b6c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AODD">2fd916032f77211089e4cc96f699b6c8</sys_scope>
+        <sys_update_name>sys_properties_2f30fbaa2f48311089e4cc96f699b616</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-18 20:12:22</sys_updated_on>
+        <type>string</type>
+        <value>2</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=2f30fbaa2f48311089e4cc96f699b616"/>
+</record_update>

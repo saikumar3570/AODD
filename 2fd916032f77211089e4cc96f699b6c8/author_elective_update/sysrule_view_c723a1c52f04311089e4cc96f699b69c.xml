@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view">
+    <sysrule_view action="DELETE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <condition/>
+        <description/>
+        <device_type>browser</device_type>
+        <match_conditions>ALL</match_conditions>
+        <name>only for expert</name>
+        <order>100</order>
+        <overrides_user_preference>true</overrides_user_preference>
+        <script><![CDATA[(function overrideView(view, is_list) {
+
+	if(gs.hasRole('admin')){
+		return;
+	}
+	if (gs.hasRole('itil')){
+		return answer = 'pod';
+	}
+
+})(view, is_list);]]></script>
+        <sys_class_name>sysrule_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-13 18:09:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c723a1c52f04311089e4cc96f699b69c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>only for expert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AODD" source="x_1068020_aodd">2fd916032f77211089e4cc96f699b6c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AODD">2fd916032f77211089e4cc96f699b6c8</sys_scope>
+        <sys_update_name>sysrule_view_c723a1c52f04311089e4cc96f699b69c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-13 19:08:47</sys_updated_on>
+        <table>x_1068020_aodd_os_image</table>
+        <view>pod</view>
+    </sysrule_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AODD">2fd916032f77211089e4cc96f699b6c8</application>
+        <file_path/>
+        <instance_id>57081860dbd6a8108aea21c405961972</instance_id>
+        <instance_name>dev106917</instance_name>
+        <name>sysrule_view_c723a1c52f04311089e4cc96f699b69c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysrule_view"&gt;&lt;sysrule_view action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;condition/&gt;&lt;description/&gt;&lt;device_type&gt;browser&lt;/device_type&gt;&lt;match_conditions&gt;ALL&lt;/match_conditions&gt;&lt;name&gt;only for expert&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;overrides_user_preference&gt;true&lt;/overrides_user_preference&gt;&lt;script&gt;&lt;![CDATA[(function overrideView(view, is_list) {
+
+	if(gs.hasRole('admin')){
+		return;
+	}
+	if (gs.hasRole('itil')){
+		return answer = 'pod';
+	}
+
+})(view, is_list);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysrule_view&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-07-13 18:09:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c723a1c52f04311089e4cc96f699b69c&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;only for expert&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="AODD" source="x_1068020_aodd"&gt;2fd916032f77211089e4cc96f699b6c8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="AODD"&gt;2fd916032f77211089e4cc96f699b6c8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysrule_view_c723a1c52f04311089e4cc96f699b69c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-07-13 19:08:47&lt;/sys_updated_on&gt;&lt;table&gt;x_1068020_aodd_os_image&lt;/table&gt;&lt;view&gt;pod&lt;/view&gt;&lt;/sysrule_view&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1654731890</payload_hash>
+        <record_name>only for expert</record_name>
+        <reverted_from/>
+        <source>ebd916032f77211089e4cc96f699b6ca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-13 19:08:47</sys_created_on>
+        <sys_id>6302f9852f44311089e4cc96f699b68a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18950a7e37c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-13 19:08:47</sys_updated_on>
+        <type>View Rule</type>
+        <update_guid>6b02f98518443110a1581fbea5303189</update_guid>
+        <update_guid_history>6b02f98518443110a1581fbea5303189:-1654731890,03d1f945864431105c5f2fe920c7e4db:908745511,0491b1c113443110ef43cf53f157ee45:-1597557816,9c3c2541d944311015c644416128edb0:855217989,83fb2141534431105f66e87cd2686bf3:1760254967,aa846d09d4043110a4ab4052a35f9745:-1558869559</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-13 19:27:54</sys_created_on>
+        <sys_db_object display_value="" name="sysrule_view">sysrule_view</sys_db_object>
+        <sys_id>25fc8426033041ee8c34b5118d5f2ba4</sys_id>
+        <sys_metadata>c723a1c52f04311089e4cc96f699b69c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>only for expert</sys_name>
+        <sys_package display_value="AODD" source="x_1068020_aodd">2fd916032f77211089e4cc96f699b6c8</sys_package>
+        <sys_parent display_value="OS Image">d8f99ec32ff7211089e4cc96f699b67e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AODD">2fd916032f77211089e4cc96f699b6c8</sys_scope>
+        <sys_scope_delete display_value="">2e540be3cb724a4aa90f2f914c001209</sys_scope_delete>
+        <sys_update_name>sysrule_view_c723a1c52f04311089e4cc96f699b69c</sys_update_name>
+        <sys_update_version display_value="sysrule_view_c723a1c52f04311089e4cc96f699b69c">6302f9852f44311089e4cc96f699b68a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-13 19:27:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
